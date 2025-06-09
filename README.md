@@ -22,7 +22,7 @@ All of this can be triggered with just natural language input.
 
 ---
 
-### Version 1.1.0 — UI/UX Enhancements
+## Version 1.1.0 — UI/UX Enhancements
 
 * Modern chat bubble-style conversation layout
 * Sidebar features:
@@ -75,24 +75,24 @@ ollama run mistral
 
 ---
 
-### 🐳 Docker Image
+## 🐳 Docker Image
 
-##  Prerequisites
+###  Prerequisites
 Ensure the following are installed and configured on your host system:
 Docker Engine ≥ 19.03
 NVIDIA Container Toolkit
 
-# Install it via:
+#### Install it via:
 sudo apt install -y nvidia-container-toolkit
-# Configure Docker to use the NVIDIA runtime
+#### Configure Docker to use the NVIDIA runtime
 sudo nvidia-ctk runtime configure --runtime=docker
-# Restart Docker
+#### Restart Docker
 sudo systemctl restart docker
 
-## Build the docker image
+### Build the docker image
 docker build -t dragonfruit-ai .
 
-## Run the App and Ollama Using Docker Compose
+### Run the App and Ollama Using Docker Compose
 docker compose up
 
 This will start:
