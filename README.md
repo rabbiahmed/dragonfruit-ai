@@ -97,7 +97,8 @@ docker compose up
 
 This will start:
 - DragonFruit AI (the Streamlit app runs on http://localhost:8501)
-- Ollama server (with the mistral model). Ollama runs internally in the container; the mistral model is automatically pulled. 
+- Ollama server (with the mistral model)
+  - Ollama runs internally in the container; the mistral model is automatically pulled. 
 - GPU support enabled (if available)
 
 ## 📄 License
