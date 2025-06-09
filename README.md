@@ -75,6 +75,31 @@ ollama run mistral
 
 ---
 
+### 🐳 Docker Image
+
+##  Prerequisites
+Ensure the following are installed and configured on your host system:
+Docker Engine ≥ 19.03
+NVIDIA Container Toolkit
+
+# Install it via:
+sudo apt install -y nvidia-container-toolkit
+# Configure Docker to use the NVIDIA runtime
+sudo nvidia-ctk runtime configure --runtime=docker
+# Restart Docker
+sudo systemctl restart docker
+
+## Build the docker image
+docker build -t dragonfruit-ai .
+
+## Run the App and Ollama Using Docker Compose
+docker compose up
+
+This will start:
+- DragonFruit AI (the Streamlit app runs on http://localhost:8501)
+- Ollama server (with the mistral model). Ollama runs internally in the container; the mistral model is automatically pulled. 
+- GPU support enabled (if available)
+
 ## 📄 License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
