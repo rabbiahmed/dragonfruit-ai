@@ -1,54 +1,92 @@
-# dragonfruit-ai
-DragonFruit AI is a lightweight, intelligent Cybersecurity assistant for personal and small business systems. It helps automate blue team tasks like system status summary, port scanning, firewall checks, vulnerability lookup, and more — all with a single natural language input. It aims to:
-- Simplify common blue team tasks for non-experts
-- Provide fast, meaningful system insights
-- Reduce time spent on threat investigation
-- Empower SMBs with accessible security automation
+# DragonFruit AI
 
-## Features (Version 1.0)
-- AI assistant
-- Detect open ports and firewall status
-- Analyze system and network health
-- Lookup CVEs by ID
-- Monitor active network connections
-- Assess Wi-Fi security level
-- NLP-powered intent parser (hybrid rules + LLM)
+**DragonFruit AI** is a lightweight, intelligent cybersecurity assistant designed for personal and small business systems. It automates common security tasks such as:
 
-## Getting Started
-HW Requirements:
-Ollama, can run AI models locally, generally requires 16 GB RAM along with recommended 50 GB disk space and modern CPU with AVX512 support. While a GPU isn’t mandatory, it can significantly improve performance.
+* System monitoring
+* Vulnerability assessment
+* CVE lookup using the NVD API
+* Optional local AI assistance (via LLMs like Mistral)
 
-SW Requirements:
-Python 3.7+
+All of this can be triggered with just natural language input.
+
+---
+
+## Version 1.0.0 Features
+
+* Analyze system and network health
+* Assess system vulnerabilities
+* Suggest system hardening improvements
+* NLP-powered intent parser (hybrid rules + LLM)
+* Lookup CVEs by ID or keyword (via NVD API)
+* Optional AI assistant (locally run via Ollama)
+
+---
+
+### Version 1.1.0 — UI/UX Enhancements
+
+* Modern chat bubble-style conversation layout
+* Sidebar features:
+  - Quick scan button
+  - Real-time system status
+  - Expandable diagnostics/info panels 
+
+---
+
+## 🚀 Getting Started
+
+### Hardware Requirements
+
+* Recommended: 16 GB RAM, modern CPU with AVX512 support
+* \~50 GB available disk space
+* GPU (optional, but helps with LLM performance)
+
+### Software Requirements
+
+* Python 3.7+
+* [Ollama](https://ollama.com) for local LLM support
+
+---
+
+### 🔧 Install & Run
 
 Install dependencies:
-```
+
+```bash
 pip install -r requirements.txt
 ```
 
-Run the app:
-```
+Launch the app:
+
+```bash
 streamlit run app.py
 ```
 
-Run Ollama:
-Try this after installing ollama, run
-```
+Run Ollama (in a separate terminal):
+
+```bash
 ollama serve
 ```
-let that be there. 
 
-Open another shell and run ollama, as an example:
-```
+Start a model (e.g., Mistral):
+
+```bash
 ollama run mistral
 ```
-## License
 
-This project is licensed under the MIT License. See `LICENSE` file for full terms.
+---
 
-> Fair Use Notice:
+## 📄 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+> **Fair Use Notice**
 > DragonFruit AI is free to use for personal and small business use.
-> If you intend to integrate this project into a commercial product or service at scale, please contact the maintainer to discuss licensing terms.
+> For integration into commercial products or large-scale services, please contact the maintainer to discuss licensing.
 
-## Contributions
-Pull requests, bug fixes, feedback, and feature suggestions are welcome!
+---
+
+## 🤝 Contributions
+
+Pull requests, feedback, and suggestions are welcome!
+Feel free to open an issue or contribute directly via GitHub.
+

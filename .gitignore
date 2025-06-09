@@ -1,0 +1,79 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# pipenv
+Pipfile.lock
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+.cache
+.pytest_cache/
+nosetests.xml
+test-results/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Streamlit
+.streamlit/config.toml
+
+# Logs and debug
+*.log
+*.out
+*.err
+log/
+logs/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# PyCharm
+.idea/
+*.iml
+
+# Local settings
+.settings/
+*.env
+.env.*
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Backup files
+*.bak
+*.tmp
+
+# OS info
+__MACOSX/
+
+# GitHub-specific
+.gitattributes
+
+# Custom user scripts/output
+output/
+results/
