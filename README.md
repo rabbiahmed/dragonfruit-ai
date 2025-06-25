@@ -32,7 +32,7 @@ All of this can be triggered with just natural language input.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Hardware Requirements
 
@@ -47,7 +47,7 @@ All of this can be triggered with just natural language input.
 
 ---
 
-### 🔧 Install & Run
+### Install & Run
 
 Install dependencies:
 
@@ -75,7 +75,7 @@ ollama run mistral
 
 ---
 
-## 🐳 Docker Image
+## Docker Image
 
 ###  Prerequisites
 Ensure the following are installed and configured on your host system:
@@ -101,7 +101,7 @@ This will start:
   - Ollama runs internally in the container; the mistral model is automatically pulled. 
 - GPU support enabled (if available)
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
@@ -111,7 +111,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ---
 
-## 🤝 Contributions
+## Contributions
 
 Pull requests, feedback, and suggestions are welcome!
 Feel free to open an issue or contribute directly via GitHub.
